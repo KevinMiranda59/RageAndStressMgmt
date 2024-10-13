@@ -12,12 +12,14 @@
 
 .header {
   grid-area: header;
+  background-color: black;
 }
 .leftSide {
   grid-area: leftSide;
 }
 .body {
   grid-area: body;
+  background-color: whitesmoke;
 }
 .rightSide {
   grid-area: rightSide;
