@@ -2,6 +2,7 @@
   width: 100%;
 
   display: grid;
+  justify-content: center;
   grid:
     "header header header" auto
     "leftSide body rightSide" 1fr
@@ -19,11 +20,26 @@
 }
 .body {
   grid-area: body;
-  background-color: whitesmoke;
+  background-color: cyan;
 }
 .rightSide {
   grid-area: rightSide;
 }
 .footer {
   grid-area: footer;
+}
+
+/*Button Stylings*/
+.mainButton {
+  border-radius: 12px;
+  color: rgba(0, 0, 0, 0);
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+}
+
+/*Image stylings*/
+.logo {
+  border-radius: 8px;
+  margin-right: auto;
 }
