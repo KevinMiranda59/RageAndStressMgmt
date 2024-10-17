@@ -11,19 +11,61 @@
       <div class="header"><img class="logo" src="./images/rsmLogo.png" /></div>
       <div class="leftSide"></div>
       <div class="innerBody">
+        <a
+          href="https://www.facebook.com/profile.php?id=61566725819680"
+          class="buttonWrap"
+        >
+          <button class="mainButton">
+            <image
+              class="fbIcon"
+              src="images/facebook-f-brands-solid.svg"
+            ></image>
+          </button>
+        </a>
         <div class="buttonWrap">
-          <button class="mainButton"><h4>Facebook</h4></button>
+          <button class="mainButton button open-button">
+            <h4>Contact Us</h4>
+          </button>
         </div>
-        <div class="buttonWrap">
-          <button class="mainButton"><h4>Contact Us</h4></button>
-        </div>
-        <div class="buttonWrap">
-          <button class="mainButton"><h4>(972) 474-7131</h4></button>
-        </div>
+        <dialog class="modal" id="modal">
+          <div>
+          <form action="https://formsubmit.co/info@rageandstressmgmt.com" method="POST">
+            <label for="fname">Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name.."
+              required
+            />
+          </div>
+            <label for="phone">Contact info: </label>
+            <input
+              type="text"
+              id="contact"
+              name="contact"
+              placeholder="So we can get back to you"
+              required
+            />
+
+            <label for="subject"></label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Let us know what we can do for you! We are always happy to answer any questions"
+              style="height: 200px"
+              required
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </dialog>
       </div>
       <div class="rightSide"></div>
       <!--Contact info sucks, maybe the footer shouldbe a simple scroll gallery?-->
-      <div class="footer"></div>
+      <div class="footer">Blah</div>
     </section>
+    <script src="./modal.js"></script>
   </body>
+  
 </html>

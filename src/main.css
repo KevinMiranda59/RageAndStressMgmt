@@ -7,6 +7,7 @@ body {
   background-image: url("./images/background.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .layout {
@@ -33,6 +34,8 @@ body {
   grid-area: body;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 200px;
 }
 .rightSide {
   grid-area: rightSide;
@@ -51,6 +54,7 @@ body {
   color: black;
   text-align: center;
   display: inline-block;
+  cursor: pointer;
   font-size: 18px;
   width: 30vh;
   height: 10vh;
@@ -70,6 +74,57 @@ body {
   max-width: 100%;
 }
 
+.fbIcon {
+  padding-top: 5px;
+  max-width: 100%;
+  width: 5vh;
+}
+
+/*Form Styling*/
+
+.modal {
+  padding: 1em;
+  max-width: 50ch;
+
+  background-color: #ffc9e8;
+
+  & > * {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
 /*Large Screens*/
 @media only screen and (min-width: 768px) {
   .mainButton {
@@ -81,5 +136,45 @@ body {
   .logo {
     margin-right: auto;
     width: 25vh;
+  }
+
+  .fbIcon {
+    padding-top: 0px;
+    max-width: 100%;
+    width: 5vh;
+  }
+
+  /*Form Styling*/
+
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
   }
 }
