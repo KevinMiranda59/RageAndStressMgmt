@@ -35,7 +35,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding-top: 30px;
-  padding-bottom: 200px;
+  padding-right: 30px;
+  padding-bottom: 100px;
 }
 .rightSide {
   grid-area: rightSide;
@@ -62,7 +63,7 @@ body {
 }
 
 .buttonWrap {
-  padding: 25px 0px 0px 25px;
+  padding: 25px 0px 10px 25px;
 }
 
 .button .h4 {
@@ -125,6 +126,13 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+/*Contact Info Styling*/
+.contactInfo {
+  padding: 0 0 0 0;
+  color: black;
+  font-size: 18px;
+  width: 1vh;
+}
 /*Large Screens*/
 @media only screen and (min-width: 768px) {
   .mainButton {
