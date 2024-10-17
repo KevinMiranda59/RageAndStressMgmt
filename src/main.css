@@ -125,6 +125,13 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
+/*Contact Info Styling*/
+.contactInfo {
+  padding: 0 0 0 0;
+  color: black;
+  font-size: 18px;
+  width: 1vh;
+}
 /*Large Screens*/
 @media only screen and (min-width: 768px) {
   .mainButton {

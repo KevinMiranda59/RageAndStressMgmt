@@ -10,7 +10,6 @@
     <section class="layout">
       <div class="header">
         <img class="logo" src="./images/rsmLogo.png" />
-        <p class = "phone"
       </div>
       <div class="leftSide"></div>
       <div class="innerBody">
@@ -31,42 +30,45 @@
           </button>
         </div>
         <dialog class="modal" id="modal">
-          <div>
-          <form action="https://formsubmit.co/info@rageandstressmgmt.com" method="POST">
-            <label for="fname">Name: </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name.."
-              required
-            />
+          <div class="notClose">
+            <div>
+            <form action="https://formsubmit.co/info@rageandstressmgmt.com" method="POST">
+              <label for="fname">Name: </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name.."
+                required
+              />
+            </div>
+              <label for="phone">Contact info: </label>
+              <input
+                type="text"
+                id="contact"
+                name="contact"
+                placeholder="So we can get back to you"
+                required
+              />
+
+              <label for="subject"></label>
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Let us know what we can do for you! We are always happy to answer any questions"
+                style="height: 200px"
+                required
+              ></textarea>
+
+              <input type="submit" value="Submit" />
+            </form>
           </div>
-            <label for="phone">Contact info: </label>
-            <input
-              type="text"
-              id="contact"
-              name="contact"
-              placeholder="So we can get back to you"
-              required
-            />
-
-            <label for="subject"></label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Let us know what we can do for you! We are always happy to answer any questions"
-              style="height: 200px"
-              required
-            ></textarea>
-
-            <input type="submit" value="Submit" />
-          </form>
         </dialog>
       </div>
       <div class="rightSide"></div>
       <!--Contact info sucks, maybe the footer shouldbe a simple scroll gallery?-->
-      <div class="footer">Blah</div>
+      <div class="footer">
+      </div>
     </section>
     <script src="./modal.js"></script>
   </body>
